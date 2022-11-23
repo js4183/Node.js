@@ -1,10 +1,12 @@
 const express = require("express");
-const bodyParser = require("body-parser"); // post 요청시 body 파싱을 위해 추가
+const bodyParser = require("body-parser");
+// post 요청시 body 파싱을 위해 추가
+
 const app = express();
 
+//bodyParser 미들웨어 추가
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//bodyParser 미들웨어 추가
 app.set("port", process.env.PORT || 8888);
 
 app.get("/get", (req, res) => {
