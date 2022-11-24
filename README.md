@@ -1,5 +1,8 @@
 # Node.js
 
-### 2022.11.22
-* npm i express
-
+### npm i
+* express
+* nunjucks
+* cookie-parser
+* session
+* mysql2
